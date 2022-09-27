@@ -85,7 +85,7 @@ void DoWorkArray(int[,] array)
         {
             for (int j = 0; j < array.GetLength(1) - 1; j++)
             {
-                if (array[row, j] > array[row, j + 1])
+                if (array[row, j] < array[row, j + 1])
                 {
                     int tmp = array[row, j + 1];
                     array[row, j + 1] = array[row, j];
